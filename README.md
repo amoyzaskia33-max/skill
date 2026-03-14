@@ -57,103 +57,103 @@ Lihat [INSTALL.md](./INSTALL.md) untuk panduan instalasi agent-specific.
 
 ### 🎨 Design & Creative (19 skills)
 
-| Skill | Deskripsi | Bahasa |
-|-------|-----------|--------|
-| `ba-effe` | Design festival Effervescence (70s-80s Bollywood) | 🇮🇩 |
-| `ux-resource` | Referensi dan resources design UI/UX | 🇮🇩 |
-| `design-resources` | Design tools, tutorials, inspiration | 🇮🇩 |
-| `awesome-portfolio-templates` | Koleksi portfolio GitHub Pages | 🇮🇩 |
-| `auto-design-agent` | 🤖 AI agent yang otomatis tawarkan variasi design | 🇮🇩 |
-| `design-variations` | 🎨 Generator variasi design UI/UX | 🇮🇩 |
-| `uiux-best-practices` | 📐 Panduan lengkap UI/UX best practices | 🇮🇩 |
-| `advanced-saas-design` | 💎 Premium SaaS design enterprise level | 🇮🇩 |
-| `creative-animations-advanced` | 🎬 Animasi cinematic tingkat tinggi | 🇮🇩 |
-| `unique-layout-patterns` | 🌀 Layout patterns unik & experimental | 🇮🇩 |
-| `generative-design-systems` | 🔮 Design systems dengan procedural generation | 🇮🇩 |
-| `custom-physics-engines` | ⚛️ Physics simulations custom engine | 🇮🇩 |
-| `procedural-generation-systems` | 🌍 Procedural content generation infinite | 🇮🇩 |
-| `lightweight-generative-art` | ⚡ Generative art optimized performance | 🇮🇩 |
-| `generative-artist-positioning` | 🎯 Strategy positioning pioneer artist | 🇮🇩 |
-| `quantum-aesthetic-entanglement` | 🧬 **BARU!** UI quantum-inspired | 🇮🇩 |
-| `temporal-morphing-interface` | 🕰️ **BARU!** UI yang berevolusi waktu | 🇮🇩 |
-| `neuro-adaptive-aesthetic` | 🧠 **BARU!** Biofeedback adaptation | 🇮🇩 |
-| `chaos-fractal-resonance` | 🔮 **BARU!** Chaos + fractals art | 🇮🇩 |
+| Skill | Deskripsi |
+|-------|-----------|
+| `ba-effe` | Design festival Effervescence (70s-80s Bollywood aesthetics) |
+| `ux-resource` | Referensi dan resources design UI/UX |
+| `design-resources` | Design tools, tutorials, inspiration |
+| `awesome-portfolio-templates` | Koleksi portfolio GitHub Pages |
+| `auto-design-agent` | 🤖 AI agent yang otomatis tawarkan variasi design UI/UX |
+| `design-variations` | 🎨 Generator variasi design UI/UX dengan multiple style |
+| `uiux-best-practices` | 📐 Panduan lengkap UI/UX best practices |
+| `advanced-saas-design` | 💎 Premium SaaS design enterprise level ($100k+ valuation) |
+| `creative-animations-advanced` | 🎬 Animasi cinematic tingkat tinggi, wow factor ekstrem |
+| `unique-layout-patterns` | 🌀 Layout patterns unik, experimental, unconventional |
+| `generative-design-systems` | 🔮 Design systems dengan procedural generation - infinite variations |
+| `custom-physics-engines` | ⚛️ Physics simulations custom engine dari scratch |
+| `procedural-generation-systems` | 🌍 Procedural content generation - infinite unique content |
+| `lightweight-generative-art` | ⚡ Generative art optimized - ringan di VGA/RAM |
+| `generative-artist-positioning` | 🎯 Strategy positioning sebagai pioneer/artist |
+| `quantum-aesthetic-entanglement` | 🧬 **BARU!** UI quantum-inspired (superposition, entanglement) |
+| `temporal-morphing-interface` | 🕰️ **BARU!** UI yang berevolusi waktu (lifecycle, memory) |
+| `neuro-adaptive-aesthetic` | 🧠 **BARU!** Biofeedback-driven adaptation |
+| `chaos-fractal-resonance` | 🔮 **BARU!** Chaos + fractals + cymatics art |
 
 ### 💻 Web Development (6 skills)
 
-| Skill | Deskripsi | Framework |
-|-------|-----------|-----------|
-| `dms-tech-lab` | Corporate showcase website | Next.js + TS |
-| `gsap-animations-website` | Scroll-triggered GSAP animations | React + Vite |
-| `enegix-template` | Business HTML template | HTML/Bootstrap |
-| `shopnest-ecommerce` | Multi-vendor e-commerce marketplace | Next.js 15 |
-| `developer-folio` | React developer portfolio | React |
-| `developer-portfolio-said` | Modern Next.js portfolio | Next.js |
+| Skill | Deskripsi |
+|-------|-----------|
+| `dms-tech-lab` | Corporate showcase website dengan Next.js + TypeScript |
+| `gsap-animations-website` | Scroll-triggered GSAP animations dengan React + Vite |
+| `enegix-template` | Business HTML template untuk agency/consulting |
+| `shopnest-ecommerce` | Multi-vendor e-commerce marketplace (Next.js 15, Stripe) |
+| `developer-folio` | React developer portfolio dengan blog integration |
+| `developer-portfolio-said` | Modern Next.js portfolio dengan dark mode, animations |
 
 ### 📱 Mobile Development (4 skills)
 
-| Skill | Deskripsi | Platform |
-|-------|-----------|----------|
-| `react-native-boilerplate` | React Native + Expo + Supabase | iOS/Android |
-| `ignite-boilerplate` | Production React Native (Infinite Red) | iOS/Android |
-| `expo-examples` | Expo example projects | iOS/Android |
-| `appium-automation` | Mobile UI automation | iOS/Android |
+| Skill | Deskripsi |
+|-------|-----------|
+| `react-native-boilerplate` | React Native starter dengan Expo, TypeScript, Supabase |
+| `ignite-boilerplate` | Production React Native dari Infinite Red |
+| `expo-examples` | Expo example projects untuk belajar |
+| `appium-automation` | Mobile UI automation untuk iOS & Android testing |
 
 ### 🔧 Automation & Tools (7 skills)
 
-| Skill | Deskripsi | Tipe |
-|-------|-----------|------|
-| `browser-use` | AI-controlled browser automation | Tool |
-| `appium-automation` | Mobile app testing automation | Tool |
-| `ios-repair-tool` | iOS firmware restore (idevicerestore) | Tool |
-| `libimobiledevice` | iOS device communication library | Library |
-| `magisk-root` | Android Magisk root guide | Guide |
-| `android-root-guide` | Panduan lengkap Android rooting | Guide |
-| `fs-poster-wordpress` | WordPress social auto-posting | Plugin |
+| Skill | Deskripsi |
+|-------|-----------|
+| `browser-use` | AI-controlled browser automation untuk web interactions |
+| `appium-automation` | Mobile app testing automation cross-platform |
+| `ios-repair-tool` | iOS firmware restore tool (idevicerestore) |
+| `libimobiledevice` | iOS device communication library tanpa iTunes |
+| `magisk-root` | Android Magisk root guide (systemless root) |
+| `android-root-guide` | Panduan lengkap Android rooting (bootloader, TWRP, ROM) |
+| `fs-poster-wordpress` | WordPress auto-posting dan social media scheduling |
 
 ### 📚 Learning Resources (8 skills)
 
-| Skill | Deskripsi | Tipe |
-|-------|-----------|------|
-| `fe-interview-questions` | Persiapan interview front-end | Guide |
-| `fullstack-roadmap` | Curriculum full-stack development | Guide |
-| `react-roadmap` | Roadmap React development | Guide |
-| `build-your-own-x` | Learn by building clones | Tutorials |
-| `developer-handbook` | Career guide software engineer | Guide |
-| `security-guide` | Security best practices | Guide |
-| `awesome-python` | Python frameworks & libraries | Reference |
-| `best-admin-dashboard-collection` | Koleksi template admin dashboard | Collection |
+| Skill | Deskripsi |
+|-------|-----------|
+| `fe-interview-questions` | Kumpulan soal interview front-end developer |
+| `fullstack-roadmap` | Curriculum lengkap full-stack web development |
+| `react-roadmap` | Roadmap dan resources React development |
+| `build-your-own-x` | Tutorial membangun teknologi dari scratch |
+| `developer-handbook` | Career guide untuk software engineer |
+| `security-guide` | Security best practices dan common vulnerabilities |
+| `awesome-python` | Python frameworks, libraries, tools curated list |
+| `best-admin-dashboard-collection` | Koleksi template admin dashboard terbaik |
 
 ### 🏗️ Boilerplates (8 skills)
 
-| Skill | Deskripsi | Stack |
-|-------|-----------|-------|
-| `saas-boilerplate` | Basic SaaS starter | Node.js |
-| `express-boilerplate` | Express.js API boilerplate | Express |
-| `saas-boilerplate-ixartz` | Premium Next.js SaaS | Next.js + TS |
-| `t3-app-boilerplate` | T3 Stack (tRPC, Prisma) | Next.js |
-| `argon-dashboard-premium` | Premium React admin | React + MUI |
-| `now-ui-dashboard-premium` | Colorful React admin | React |
-| `material-kit-devias` | Professional Material-UI | MUI |
-| `adminlte-template` | Most popular admin template | Bootstrap |
+| Skill | Deskripsi |
+|-------|-----------|
+| `saas-boilerplate` | SaaS starter dengan auth, payments, dashboard |
+| `express-boilerplate` | Express.js API boilerplate dengan JWT auth |
+| `saas-boilerplate-ixartz` | Premium Next.js SaaS boilerplate (TypeScript, Tailwind, Shadcn) |
+| `t3-app-boilerplate` | Full-stack TypeScript (Next.js, tRPC, Prisma, Tailwind) |
+| `argon-dashboard-premium` | Premium React admin dashboard (Argon Design) |
+| `now-ui-dashboard-premium` | Colorful React admin dashboard (Now UI Design) |
+| `material-kit-devias` | Professional Material-UI dashboard oleh Devias |
+| `adminlte-template` | Most popular Bootstrap admin template (40k+ stars) |
 
 ### 🛡️ Protection & Licensing (1 skill)
 
-| Skill | Deskripsi | Fitur |
-|-------|-----------|-------|
-| `blockchain-provenance-art` | 🌐 **BARU!** Immutable proof of creation | Smart contract, watermark, royalty |
+| Skill | Deskripsi |
+|-------|-----------|
+| `blockchain-provenance-art` | 🌐 **BARU!** Immutable proof of creation - smart contract licensing, watermark, royalty automation |
 
 ### 🚀 Development Workflow (1 collection)
 
-| Skill | Deskripsi | Sub-skills |
-|-------|-----------|------------|
-| `superpowers` | AI agent workflow framework | 14 skills |
+| Skill | Deskripsi |
+|-------|-----------|
+| `superpowers` | Framework untuk AI coding agents dengan 14 sub-skills |
 
 ## 📊 Statistik
 
 ```
 Total Skills: 50 skills
-Total Size: ~1.6 GB (setelah cleanup)
+Total Size: ~1.6 GB
 Kategori: 10 categories
 Bahasa: Mixed Indonesia-English
 Compatible Agents: 7+
@@ -164,11 +164,11 @@ Total Lines: 8,000+ dokumentasi + code
 
 ```
 ai-skills-collection/
-├── README.md                 # File ini (Bahasa Indonesia)
+├── README.md                 # File ini
 ├── INSTALL.md                # Panduan instalasi
 ├── SKILL_INDEX.md            # Index lengkap skills
 ├── skills/                   # Semua skills
-│   ├── SKILL.md              # Index utama (Bahasa Indonesia)
+│   ├── SKILL.md              # Index utama
 │   ├── quantum-aesthetic-entanglement/  # 🆕 BARU!
 │   ├── temporal-morphing-interface/     # 🆕 BARU!
 │   ├── neuro-adaptive-aesthetic/        # 🆕 BARU!
@@ -257,7 +257,7 @@ ai-skills-collection/
 
 - ⚠️ **developer-handbook** - Ada masalah checkout pada Windows (path issues)
 - ⚠️ **shopnest-ecommerce** - Mungkin incomplete karena disk space saat ekstraksi
-- Setiap skill memiliki file `SKILL.md` dengan panduan lengkap (Bahasa Indonesia)
+- Setiap skill memiliki file `SKILL.md` dengan panduan lengkap
 - Skills dapat dikombinasikan untuk hasil optimal
 - Update skills secara berkala untuk fitur terbaru
 
@@ -267,11 +267,11 @@ ai-skills-collection/
 
 | Skill | Keunikan | Status |
 |-------|----------|--------|
-| **quantum-aesthetic-entanglement** | 🧬 UI dengan quantum state, observer effect | ✅ Live |
-| **temporal-morphing-interface** | 🕰️ UI yang berevolusi seiring waktu | ✅ Live |
-| **neuro-adaptive-aesthetic** | 🧠 Biofeedback-driven adaptation | ✅ Live |
-| **blockchain-provenance-art** | 🌐 Immutable proof + smart contract | ✅ Live |
-| **chaos-fractal-resonance** | 🔮 Mathematical impossibility to replicate | ✅ Live |
+| **quantum-aesthetic-entanglement** | 🧬 UI quantum state, observer effect | ✅ Live |
+| **temporal-morphing-interface** | 🕰️ UI lifecycle, evolution, memory | ✅ Live |
+| **neuro-adaptive-aesthetic** | 🧠 Biofeedback, cognitive load detection | ✅ Live |
+| **blockchain-provenance-art** | 🌐 Immutable proof, smart contract | ✅ Live |
+| **chaos-fractal-resonance** | 🔮 Chaos theory + fractals, math impossibility | ✅ Live |
 
 **Total: 50 skills** - Koleksi terlengkap untuk AI-assisted development!
 
@@ -286,7 +286,8 @@ Kontribusi selalu diterima! Cara kontribusi:
 
 ### Panduan Kontribusi
 
-- Gunakan Bahasa Indonesia atau mixed Indo-English
+- Gunakan Bahasa Indonesia untuk penjelasan
+- Istilah teknis tetap English (function, component, API, etc.)
 - Sertakan dokumentasi lengkap di SKILL.md
 - Tambahkan code examples yang runnable
 - Update README jika menambah skill baru
@@ -296,7 +297,6 @@ Kontribusi selalu diterima! Cara kontribusi:
 - **Issues**: GitHub Issues
 - **Discord**: [Link]
 - **Documentation**: [docs/](./docs/)
-- **Email**: [your-email@example.com]
 
 ## 📄 License
 
@@ -310,7 +310,4 @@ Terima kasih kepada semua kontributor open-source yang telah membuat skills ini 
 
 **Made with ❤️ for the AI community**
 
-**Dibuat dengan ❤️ untuk komunitas AI Indonesia & global**
-
 *Last Updated: Maret 2026*
-*Terakhir Diperbarui: Maret 2026*

@@ -17,18 +17,18 @@ Koleksi skill AI assistant untuk meningkatkan produktivitas dan workflow pengemb
 | **auto-design-agent** | 🤖 AI agent yang otomatis menawarkan variasi UI/UX design modern, unik, dan menarik |
 | **design-variations** | 🎨 Generator variasi design UI/UX dengan multiple style options, layouts, dan animations |
 | **uiux-best-practices** | 📐 Panduan lengkap UI/UX best practices untuk design professional, accessible, user-friendly |
-| **advanced-saas-design** | 💎 Premium SaaS design level enterprise ($100k+ valuation) dengan features canggih yang jarang ada |
-| **creative-animations-advanced** | 🎬 Animasi cinematic tingkat tinggi yang jarang dipakai, wow factor ekstrem |
-| **unique-layout-patterns** | 🌀 Layout patterns unik, experimental, dan unconventional yang jarang ditemukan |
-| **generative-design-systems** | 🔮 Design systems yang generate unique patterns setiap kali - tidak ada dua output yang sama (procedural generation) |
-| **custom-physics-engines** | ⚛️ Physics simulations dengan custom engine dari scratch - movement unique dan sulit direplikasi |
-| **procedural-generation-systems** | 🌍 Procedural content generation untuk infinite unique content - terrain, textures, patterns yang tidak akan pernah sama |
-| **lightweight-generative-art** | ⚡ Generative art optimized untuk performance - ringan di VGA/RAM (integrated graphics OK!) tetap unique |
-| **generative-artist-positioning** | 🎯 Strategy positioning sebagai pioneer/artist - building trust client, authority, premium pricing |
-| **quantum-aesthetic-entanglement** | 🧬 UI quantum-inspired (superposition, entanglement, observer effect) - design berbeda per user reality |
-| **temporal-morphing-interface** | 🕰️ UI yang HIDUP dan BEREVOLUSI - lifecycle, memory, generational evolution, time-adaptive |
-| **neuro-adaptive-aesthetic** | 🧠 Biofeedback-driven UI - cognitive load detection, emotion adaptation, preference learning |
-| **chaos-fractal-resonance** | 🔮 Mathematics of chaos + fractals + cymatics - MATHEMATICALLY IMPOSSIBLE to replicate |
+| **advanced-saas-design** | 💎 Premium SaaS design level enterprise ($100k+ valuation) dengan features canggih |
+| **creative-animations-advanced** | 🎬 Animasi cinematic tingkat tinggi dengan wow factor ekstrem |
+| **unique-layout-patterns** | 🌀 Layout patterns unik, experimental, dan unconventional |
+| **generative-design-systems** | 🔮 Design systems yang generate unique patterns setiap kali - procedural generation |
+| **custom-physics-engines** | ⚛️ Physics simulations dengan custom engine dari scratch |
+| **procedural-generation-systems** | 🌍 Procedural content generation untuk infinite unique content |
+| **lightweight-generative-art** | ⚡ Generative art optimized untuk performance - ringan di VGA/RAM |
+| **generative-artist-positioning** | 🎯 Strategy positioning sebagai pioneer/artist - premium pricing |
+| **quantum-aesthetic-entanglement** | 🧬 UI quantum-inspired (superposition, entanglement, observer effect) |
+| **temporal-morphing-interface** | 🕰️ UI yang berevolusi waktu - lifecycle, memory, generational evolution |
+| **neuro-adaptive-aesthetic** | 🧠 Biofeedback-driven UI - cognitive load detection, emotion adaptation |
+| **chaos-fractal-resonance** | 🔮 Chaos theory + fractals + cymatics - mathematically impossible to replicate |
 
 ### 💻 Web Development (6 skills)
 
@@ -58,9 +58,9 @@ Koleksi skill AI assistant untuk meningkatkan produktivitas dan workflow pengemb
 | **ios-repair-tool** | Restore/upgrade firmware iOS dengan idevicerestore |
 | **libimobiledevice** | Library komunikasi dengan iOS devices tanpa iTunes |
 | **magisk-root** | Systemless root Android dengan Magisk |
-| **android-root-guide** | Panduan lengkap root Android (bootloader, TWRP, ROM) |
+| **android-root-guide** | Panduan lengkap root Android (bootloader unlock, TWRP, custom ROM) |
 
-### 🎨 Gudang Template Frontend (12 skills)
+### 🎨 Template Frontend (12 skills)
 
 | Skill | Deskripsi |
 |-------|-----------|
@@ -94,7 +94,7 @@ Koleksi skill AI assistant untuk meningkatkan produktivitas dan workflow pengemb
 
 | Skill | Deskripsi |
 |-------|-----------|
-| **fs-poster-wordpress** | WordPress auto-posting, social media scheduling, multi-account |
+| **fs-poster-wordpress** | WordPress auto-posting, social media scheduling, multi-account management |
 | **browser-use** | AI-controlled browser automation untuk web interactions |
 | **anything-llm** | Local LLM workspace dengan RAG, document chat, multi-model support |
 | **devagent-ai-workspace** | AI agent development environment untuk autonomous agents |
@@ -104,7 +104,7 @@ Koleksi skill AI assistant untuk meningkatkan produktivitas dan workflow pengemb
 | Skill | Deskripsi |
 |-------|-----------|
 | **express-boilerplate** | Node.js API boilerplate dengan JWT auth, database, validation |
-| **sst** | Serverless framework untuk deploy Full-stack Apps on AWS dengan Zero Config |
+| **sst** | Serverless framework untuk deploy Full-stack Apps on AWS |
 | **awesome-python** | Python frameworks, libraries, tools, dan resources |
 
 ### 🏗️ Boilerplates & Templates (8 skills)
@@ -142,10 +142,10 @@ Semua skills terinstall di: `C:\Users\user\ai-skills-collection\skills\`
 skills/
 ├── SKILL.md                        # Index utama
 ├── quantum-aesthetic-entanglement/ # 🆕 UI quantum-inspired
-├── temporal-morphing-interface/    # 🆕 UI yang berevolusi
+├── temporal-morphing-interface/    # 🆕 UI berevolusi waktu
 ├── neuro-adaptive-aesthetic/       # 🆕 Biofeedback UI
 ├── blockchain-provenance-art/      # 🆕 Protection & licensing
-├── chaos-fractal-resonance/        # 🆕 Chaos + fractals
+├── chaos-fractal-resonance/        # 🆕 Mathematical art
 ├── generative-design-systems/      # Procedural generation
 ├── custom-physics-engines/         # Custom physics
 ├── procedural-generation-systems/  # Infinite content
@@ -218,10 +218,10 @@ skills/
 
 ### Untuk Generative Art (UNREPLICABLE!)
 
-1. `quantum-aesthetic-entanglement` - 🆕 Quantum UI
-2. `temporal-morphing-interface` - 🆕 Time-evolving UI
+1. `quantum-aesthetic-entanglement` - 🆕 UI quantum-inspired
+2. `temporal-morphing-interface` - 🆕 UI berevolusi waktu
 3. `neuro-adaptive-aesthetic` - 🆕 Biofeedback adaptation
-4. `blockchain-provenance-art` - 🆕 Protection & licensing
+4. `blockchain-provenance-art` - 🆕 Protection karya digital
 5. `chaos-fractal-resonance` - 🆕 Mathematical art
 6. `generative-design-systems` - Procedural patterns
 7. `custom-physics-engines` - Custom simulations
@@ -243,13 +243,13 @@ skills/
 
 5 Skills BARU yang belum pernah ada di repo manapun:
 
-| Skill | Unreplicable Factor | Bahasa |
-|-------|---------------------|--------|
-| **quantum-aesthetic-entanglement** | 🧬 Quantum state UI, observer effect, entanglement | 🇮🇩 Indo-English |
-| **temporal-morphing-interface** | 🕰️ Time-dependent UI, evolution, memory | 🇮🇩 Indo-English |
-| **neuro-adaptive-aesthetic** | 🧠 Biofeedback, cognitive load detection | 🇮🇩 Indo-English |
-| **blockchain-provenance-art** | 🌐 Immutable proof, smart contract licensing | 🇮🇩 Indo-English |
-| **chaos-fractal-resonance** | 🔮 Mathematical impossibility to replicate | 🇮🇩 Indo-English |
+| Skill | Unreplicable Factor |
+|-------|---------------------|
+| **quantum-aesthetic-entanglement** | 🧬 Quantum state UI, observer effect, entanglement |
+| **temporal-morphing-interface** | 🕰️ Time-dependent UI, evolution, memory |
+| **neuro-adaptive-aesthetic** | 🧠 Biofeedback, cognitive load detection |
+| **blockchain-provenance-art** | 🌐 Immutable proof, smart contract licensing |
+| **chaos-fractal-resonance** | 🔮 Mathematical impossibility to replicate |
 
 **Total: 50 skills** - Koleksi terlengkap untuk AI-assisted development!
 
