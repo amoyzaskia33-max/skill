@@ -23,6 +23,8 @@ Koleksi skill AI assistant untuk meningkatkan produktivitas dan workflow pengemb
 | **generative-design-systems** | 🔮 Design systems yang generate unique patterns setiap kali - tidak ada dua output yang sama (procedural generation) |
 | **custom-physics-engines** | ⚛️ Physics simulations dengan custom engine dari scratch - movement unique dan sulit direplikasi |
 | **procedural-generation-systems** | 🌍 Procedural content generation untuk infinite unique content - terrain, textures, patterns yang tidak akan pernah sama |
+| **lightweight-generative-art** | ⚡ Generative art optimized untuk performance - ringan di VGA/RAM (integrated graphics OK!) tetap unique |
+| **generative-artist-positioning** | 🎯 Strategy positioning sebagai pioneer/artist - building trust client, authority, premium pricing |
 
 ### 💻 Web Development
 
