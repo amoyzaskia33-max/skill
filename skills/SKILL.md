@@ -14,6 +14,9 @@ Koleksi skill AI assistant untuk meningkatkan produktivitas dan workflow pengemb
 | **ux-resource** | Referensi UI/UX design, artikel, tools, dan resource belajar |
 | **design-resources** | Design tools, tutorials, inspiration, dan assets untuk developers |
 | **portfolio-tejas1996p** | Reference untuk portfolio websites dengan glassmorphism, 3D objects, vanilla JS |
+| **auto-design-agent** | 🆕 AI agent yang otomatis menawarkan variasi UI/UX design modern, unik, dan menarik |
+| **design-variations** | 🆕 Generator variasi design UI/UX dengan multiple style options, layouts, dan animations |
+| **uiux-best-practices** | 🆕 Panduan lengkap UI/UX best practices untuk design professional, accessible, user-friendly |
 
 ### 💻 Web Development
 
