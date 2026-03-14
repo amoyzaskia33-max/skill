@@ -1,0 +1,5 @@
+Event Announcement Template: Use this for major reveals. Swap the central "EVENT IMAGE" placeholder with a high-quality guest or activity photo and keep the "SAVE THE DATE JAN 24-26" text prominent.
+
+Quote/Update Template: Use this for daily engagement or general news. Replace the placeholder text "Believe in Yourself Anything is Possible" with important updates or inspiring alumni quotes.
+
+Society Lineup Template: Use this to list specific society schedules. Update the event headers (currently "GAME MANIA" and "CODE FEST") and edit the "INSTRUCTION" sections to reflect correct team sizes and timings (e.g., "Maximum 4 members per team")

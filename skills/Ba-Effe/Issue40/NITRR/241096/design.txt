@@ -1,0 +1,11 @@
+-Typography & Text Treatment The logotype "EFFERVESCENCE" must use a heavy, bold, sans-serif display font with a comic book or superhero aesthetic. The text should be filled with bright yellow, encased in a thick black outline, and given a deep, isometric black drop shadow (extrusion) to create a bold 3D pop-art effect.
+
+-Color Palette The design relies on a high-contrast, limited color scheme evoking retro print styles. The primary colors are Hot Magenta (for the background shape and character shading), Vibrant Yellow (for the main text and character accents), Black (for high-contrast shadows and outlines), and White (for negative space and highlights).
+
+-Thematic Illustration Style The imagery should feature stylized, vector-based character illustrations that pay homage to classic Bollywood cinema. The figures (e.g., the hero in a dynamic pose, the dancer) should be rendered in a two-tone, posterized style using magenta and yellow to blend seamlessly with the background while maintaining a retro-cinematic look.
+
+-Composition & Layering The layout follows a central "burst" composition. The typography serves as the horizontal foreground anchor. All illustrative elements—characters and props—should appear to rise from behind the text or sit below it, creating a sense of depth and an "explosion" of energy radiating from the center.
+
+-Iconography To reinforce the film theme, specific cinema-related icons must be integrated. A clapperboard (film slate) should be placed on the left side, and a classic film camera silhouette on the right. These elements balance the design and provide immediate context for the event.
+
+-Background Elements The entire composition should be framed by a geometric, mandala-style, or starburst backdrop in deep magenta. This shape acts as a container for the chaotic elements, unifying the characters and props while providing a dark canvas that maximizes the legibility of the bright yellow text.

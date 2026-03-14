@@ -1,0 +1,24 @@
+# robots.txt
+# 검색 엔진 크롤러 지시 파일
+
+# 모든 크롤러 허용
+User-agent: *
+Allow: /
+
+# Google 사이트 소유권 확인용
+# Google Search Console에서 제공하는 TXT 레코드
+CWC4Nl8d5XqpLf_kEzVOlaS6IE7TtBmDuXONoOF7iZE
+
+# 차단할 경로 (필요시)
+# Disallow: /api/
+# Disallow: /auth/
+# Disallow: /_next/static/
+
+# 사이트맵 위치
+Sitemap: https://dmssolution.co.kr/sitemap.xml
+
+# 크롤러 지연시간 (선택사항, 초 단위)
+Crawl-delay: 1
+
+# 사이트 방문 주기 (선택사항, 초 단위)
+Request-rate: 1/5

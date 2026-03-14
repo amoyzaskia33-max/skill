@@ -1,0 +1,22 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Common Renovate config for Appium packages",
+  "extends": [
+    "config:js-app",
+    "group:definitelyTyped",
+    ":automergeStableNonMajor",
+    ":automergeDigest",
+    ":enableVulnerabilityAlerts",
+    ":rebaseStalePrs",
+    ":semanticCommits",
+    ":semanticCommitTypeAll(chore)"
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames": ["ora"],
+      "matchUpdateTypes": ["major"],
+      "enabled": false
+    }
+  ],
+  "semanticCommitScope": "{{#if parentDir}}{{parentDir}}{{else}}deps{{/if}}"
+}

@@ -1,0 +1,165 @@
+---
+title: "완벽하게 일관된 캐릭터 세트 만들기 (My Step-by-Step Method)"
+date: "2026-01-28"
+desc: "Midjourney와 Nano Banana Pro를 활용하여 영상 제작에서도 깨지지 않는 완벽한 캐릭터 일관성을 유지하는 비법"
+coverImage: "/images/education/consistent-char/02-split.png"
+readTime: "15 min"
+---
+
+<div className="bg-white text-black p-8 md:p-12 rounded-2xl shadow-2xl font-sans leading-relaxed prose prose-lg max-w-none prose-headings:text-black prose-p:text-black prose-strong:text-black prose-ul:text-black prose-li:text-black prose-blockquote:text-gray-800 prose-blockquote:border-l-blue-600">
+
+# 왜 이토록 '일관성'에 집착했는가?
+
+캐릭터를 다양한 각도로 생성해 본 적이 있다면, 그 고통을 아실 겁니다.
+프롬프트 하나를 넣으면 흑발이 나오고, 다음 프롬프트에서는 갑자기 금발이 튀어나옵니다. 망토의 색상은 제멋대로 바뀌고, 애써 디자인한 갑옷은 온데간데없이 사라지죠. 정말 미치고 팔짝 뛸 노릇입니다.
+
+이 문제는 영상 생성 AI를 사용할 때 가장 빈번하게 마주하는 난관입니다. 단순히 "비슷해 보이는" 수준(Close enough)으로는 만족할 수 없습니다. Kling AI와 같은 전문 영상 생성 툴에서는 철칙이 하나 있습니다.
+
+> "Rubbish in, Rubbish out (쓰레기를 넣으면 쓰레기가 나온다)."
+
+소스 이미지가 일관되지 않으면, 결과물 영상은 뒤죽박죽 엉망이 됩니다. 캐릭터가 고개를 돌릴 때마다 얼굴이 미묘하게 바뀐다면 관객은 몰입할 수 없습니다.
+
+완벽해질 때까지의 실험 끝에, 마침내 진짜로 작동하는 방법을 찾아냈습니다.
+
+---
+
+<div className="my-8 rounded-xl overflow-hidden border border-gray-200 shadow-lg">
+  <Image 
+    src="/images/education/consistent-char/02-split.png" 
+    alt="Consistent Character Set"
+    width={1920}
+    height={1080}
+    className="w-full h-auto object-cover"
+  />
+</div>
+*(완성된 캐릭터 세트의 예시: 정면과 반측면이 완벽하게 일치하는 모습)*
+
+<br/>
+
+# 판을 뒤집은 핵심 원리 (The Method That Changed Everything)
+
+가장 큰 깨달음은 이것입니다: "원하는 것을 한 번에 묘사하려 하지 마라."
+대신, 이전 단계의 결과물을 철저하게 참조(Reference)하면서 단계별로(Step-by-step) 캐릭터를 쌓아 올려야 합니다.
+
+검증된 워크플로우를 그대로 공개합니다.
+
+## Step 0: 미드저니로 기초 다지기 (Optional)
+
+먼저 Midjourney를 사용해 캐릭터의 '증명사진' 격인 포트레이트를 생성합니다. 이 단계는 생략하고 바로 다음 단계로 넘어가거나 기존 이미지를 사용해도 되지만, 무에서 유를 창조할 때 이 방법이 가장 확실합니다.
+
+프롬프트 예시:
+> *Portrait of a beautiful Chinese woman, dark hair, gentle smile, visible freckles, big warm and kind almond shape blue eyes. face close up, point shooting, edge shadow for depth of fill, plain white background --ar 9:16 --sref [Style URL] --profile [User Profile]*
+
+<div className="my-8 max-w-sm mx-auto rounded-xl overflow-hidden border border-gray-200 shadow-lg">
+  <Image 
+    src="/images/education/consistent-char/01-portrait.png" 
+    alt="Step 0 Portrait" 
+    width={800} 
+    height={800}
+    className="w-full h-auto"
+  />
+</div>
+
+이 단계에서 우리는 핵심 얼굴 특징(Core Features), 깨끗한 흰색 배경, 그리고 앞으로 구축할 스타일의 기준점을 얻게 됩니다. 흰색 배경은 나중에 캐릭터를 분리하거나 일관성을 유지하는 데 필수적입니다.
+
+<br/>
+
+## Step 1: 클로즈업 + 반신샷 (16:9) - 가장 중요한 단계
+
+이제 Nano Banana Pro (또는 Sora2/DALL-E 3 등의 고급 툴)로 넘어갑니다. 여기가 바로 모든 것의 기초가 되는 단계입니다.
+
+우리는 화면을 분할하여 왼쪽에는 얼굴 클로즈업, 오른쪽에는 반신(Half-body) 디자인을 동시에 배치할 것입니다. 이렇게 하면 AI가 동일한 프롬프트 내에서 얼굴과 의상의 디테일을 동시에 학습하고 연결하게 됩니다.
+
+핵심 묘사 (Core Description):
+> *Side by side photo of a close up face, and half body character design (both views are different view of an identical design) of a woman with long, flowing dark hair and a gentle, warm smile. Her face is adorned with delicate freckles, and her striking blue almond-shaped eyes exude kindness. She wears an ornate, deep-blue hooded cloak embellished with intricate gold patterns resembling swirling waves or dragons, evoking a sense of fantasy or ancient nobility. The fabric appears rich and textured, fastened with an elaborate golden clasp at the shoulder. Underneath, glimpses of armored plating suggest a warrior or royal status. The overall aesthetic blends elegance with strength, set against a soft, neutral background that highlights her serene yet powerful presence. close up face on the left, half body on the right, on a flat plain white background, photography with edge lighting for depth, 16:9, 2K*
+
+<div className="my-8 rounded-xl overflow-hidden border border-gray-200 shadow-lg">
+  <Image 
+    src="/images/education/consistent-char/02-split.png" 
+    alt="Step 1 Split View"
+    width={1920}
+    height={1080}
+    className="w-full h-auto"
+  />
+</div>
+
+이 '핵심 묘사(Core Description)'를 주목하세요. 이 문단을 토씨 하나 바꾸지 않고 이후의 모든 프롬프트에 복사해서 붙여넣기 해야 합니다. AI에게 "이게 바로 그 캐릭터야"라고 끊임없이 주입시키는 것입니다.
+
+<br/>
+
+## Step 2: 전신 앞/뒤 시트 (Full-Body Front/Back) - 5:4 비율
+
+이제 캐릭터의 전체적인 실루엣을 확정할 차례입니다. 앞모습과 뒷모습을 한 장에 담습니다.
+
+프롬프트:
+> *create a full body front and back view from this complete character as attached, [Step 1의 핵심 묘사 붙여넣기], on a flat plain white background, photography with edge lighting for depth, 5:4 aspect ratio, 2K resolution*
+
+<div className="my-8 rounded-xl overflow-hidden border border-gray-200 shadow-lg">
+  <Image 
+    src="/images/education/consistent-char/03-fullbody.png" 
+    alt="Step 2 Full Body"
+    width={1200}
+    height={960}
+    className="w-full h-auto"
+  />
+</div>
+
+여기서 마법의 주문은 "from this complete character as attached (첨부된 완성된 캐릭터로부터)" 입니다. Step 1에서 만든 이미지를 레퍼런스로 넣고, AI에게 "새로 그리지 말고, 아까 그 캐릭터를 그대로 가져와"라고 명령하는 것입니다.
+
+이 단계에서 5:4 비율을 사용하는 것도 중요합니다. 전신을 담기에 가장 안정적인 비율이기 때문입니다.
+
+<br/>
+
+## Step 3 & 4: 다양한 앵글 추출 (Half-Body & Three-Quarter)
+
+이제 기초 자산은 모두 마련되었습니다. 필요한 다양한 앵글을 추출하기만 하면 됩니다.
+
+*   반신샷(Half-body): 다시 16:9 비율로 돌아와서, 캐릭터의 상반신 디테일을 더 선명하게 뽑아냅니다.
+*   45도 측면(Three-quarter view): 영상에서 가장 많이 쓰이는 자연스러운 각도입니다.
+
+프롬프트는 동일합니다. "create a [view name] from this complete character as attached..." 뒤에 핵심 묘사를 붙이면 됩니다.
+
+---
+
+# 절대 실패하지 않는 3가지 법칙 (The Three Rules)
+
+수없이 실패하며 깨달은, 타협할 수 없는 3가지 원칙입니다.
+
+### 1. 순서가 생명이다 (Sequential Building)
+절대 단계를 건너뛰지 마세요.
+"얼굴 → 반신 → 전신" 순서로 빌드업해야 합니다. 욕심을 부려 처음부터 전신을 뽑으려 하면 얼굴이 뭉개지고, 클로즈업만 하다가 전신으로 넘어가면 의상이 바뀝니다. 반신(Half-body) 단계가 둘 사이를 이어주는 가교 역할을 합니다.
+
+### 2. 비율의 마법 (Aspect Ratio Matters)
+단순한 크기 문제가 아닙니다. AI는 비율에 따라 구도를 결정합니다.
+*   16:9: 클로즈업, 반신, 영화 같은 샷에 최적화됨.
+*   5:4: 전신 캐릭터 시트(Front/Back)를 만들 때만 사용.
+
+### 3. 토씨 하나 바꾸지 마라 (Identical Core Description)
+핵심 묘사 문단은 성경과 같습니다. 매번 프롬프트를 조금씩 수정하고 싶은 유혹을 참으세요. 텍스트가 100% 일치해야 AI가 "아, 아까 그 설정(Canonical Setting)이구나"라고 인식합니다. 
+
+<br/>
+
+# 왜 이토록 디테일에 집착해야 하나요?
+
+"적당히 비슷하면 되지 않나?"라고 생각할 수도 있습니다. 하지만 영상 제작(Image-to-Video)의 영역으로 넘어가면 이야기가 달라집니다.
+
+캐릭터의 눈매(Lyra’s expression), 망토의 문양, 갑옷의 질감... 이 모든 것이 모든 각도에서 일치해야 합니다. 이렇게 만든 캐릭터 세트를 Kling AI (특히 O1 모델)에 넣었을 때, 기괴한 모핑(Morphing)이나 캐릭터가 다른 사람으로 변하는(Drift) 현상이 사라집니다.
+
+영상 툴은 마법사가 아닙니다. 훌륭한 재료를 주어야 훌륭한 요리가 나옵니다.
+Quality Character Sets IN = Quality Video OUT.
+
+---
+
+# 요약: 지금 바로 따라 해보세요
+
+1.  (선택) 미드저니로 기초 포트레이트를 만드세요.
+2.  '핵심 정체성(Core Identity)'을 2~3문장으로 작성하세요. (절대 변하지 않을 특징들)
+3.  Nano Banana Pro에서 클로즈업 + 반신(16:9)을 생성하세요.
+4.  반드시 "As attached" 기능을 사용하여, 이전 이미지를 참조로 넣으세요.
+5.  전신 앞/뒤(5:4)를 생성하세요.
+6.  필요한 나머지 앵글들을 추출하세요.
+7.  모든 과정에서 핵심 묘사 텍스트는 복사/붙여넣기 하세요.
+
+이 워크플로우를 마스터하면, 더 이상 "랜덤 가챠"에 의존하지 않고 여러분이 상상한 그 캐릭터를 온전히 통제할 수 있게 될 것입니다.
+
+</div>

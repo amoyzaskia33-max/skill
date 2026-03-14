@@ -1,0 +1,15 @@
+**/node_modules/**
+**/build/**
+**/fixtures/**
+**/*.min.*
+**/*.md
+package-lock.json
+package.json
+**/.vscode/**
+**/*.html
+**/generated/**
+# generated
+packages/types/lib/appium-config.ts
+**/*.hbs
+
+/.nx/workspace-data

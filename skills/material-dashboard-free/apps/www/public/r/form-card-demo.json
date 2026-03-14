@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "form-card-demo",
+  "registryDependencies": [
+    "card",
+    "button",
+    "input",
+    "label"
+  ],
+  "files": [
+    {
+      "path": "components/examples/form-card-demo.tsx",
+      "content": "\"use client\"\n\nimport { Button } from \"@/components/ui/button\"\nimport {\n  Card,\n  CardContent,\n  CardDescription,\n  CardFooter,\n  CardHeader,\n  CardTitle,\n} from \"@/components/ui/card\"\nimport { Input } from \"@/components/ui/input\"\nimport { Label } from \"@/components/ui/label\"\n\nexport default function FormCardDemo() {\n  return (\n    <Card className=\"w-full max-w-md\">\n      <CardHeader>\n        <CardTitle>Create Account</CardTitle>\n        <CardDescription>\n          Enter your information to get started with Creative Tim UI\n        </CardDescription>\n      </CardHeader>\n      <CardContent className=\"space-y-4\">\n        <div className=\"space-y-2\">\n          <Label htmlFor=\"name\">Full Name</Label>\n          <Input id=\"name\" placeholder=\"John Doe\" />\n        </div>\n        <div className=\"space-y-2\">\n          <Label htmlFor=\"email\">Email Address</Label>\n          <Input id=\"email\" type=\"email\" placeholder=\"john@example.com\" />\n        </div>\n        <div className=\"space-y-2\">\n          <Label htmlFor=\"password\">Password</Label>\n          <Input id=\"password\" type=\"password\" placeholder=\"••••••••\" />\n        </div>\n      </CardContent>\n      <CardFooter>\n        <Button className=\"w-full\">Sign Up</Button>\n      </CardFooter>\n    </Card>\n  )\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "type": "registry:ui"
+}

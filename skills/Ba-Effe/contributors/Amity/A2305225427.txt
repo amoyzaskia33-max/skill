@@ -1,0 +1,9 @@
+Name: Ishan Raj Singh
+
+College: Amity, Noida
+
+About Me:
+Passionate tech enthusiast with 2 years of experience in building scalable, high-performance applications and solving complex algorithmic problems. Skilled in writing clean, efficient code, and always learning the latest tools and best practices.
+
+Favorite Film:
+Insidious

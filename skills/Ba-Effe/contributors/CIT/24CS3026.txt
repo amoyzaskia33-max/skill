@@ -1,0 +1,5 @@
+Name: YOGESH M
+Enrolment Number: 24CS3026
+College: CIT Chennai
+About me: I’m a Computer Science focused student with a background in Mechatronics and a strong interest in AI, software development, and problem-solving. I actively work on projects, open-source contributions.
+Favourite Movie: La La Land 

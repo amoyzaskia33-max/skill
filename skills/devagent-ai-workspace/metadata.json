@@ -1,0 +1,7 @@
+{
+  "name": "DevAgent AI Workspace",
+  "description": "A split-screen agentic workflow with Chat, Code Editor, Terminal, and Browser Preview powered by Gemini.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

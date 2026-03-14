@@ -1,0 +1,1060 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tejas Patel — UI/UX Designer & Front-End Developer</title>
+  <meta name="description" content="Tejas Patel — Senior UI/UX Designer & Front-End Developer. Angular, React, Figma, Design Systems." />
+
+  <style>
+    :root{
+      --bg:#1a1625;
+      --bg2:#0f0c14;
+      --panel: rgba(255,255,255,.04);
+      --panel2: rgba(255,255,255,.06);
+      --border: rgba(255,255,255,.10);
+
+      --text: rgba(255,255,255,.95);
+      --muted: rgba(255,255,255,.75);
+      --muted2: rgba(255,255,255,.55);
+
+      --accent: #ff9ff3;
+      --accent2:#feca57;
+      --accent3:#54a0ff;
+
+      --shadow: 0 18px 55px rgba(0,0,0,.55);
+      --r: 18px;
+      --max: 1120px;
+    }
+
+    @keyframes fadeUp{
+      from{opacity:0;transform:translateY(30px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+    @keyframes fadeIn{
+      from{opacity:0}
+      to{opacity:1}
+    }
+    @keyframes float{
+      0%,100%{transform:translateY(0)}
+      50%{transform:translateY(-10px)}
+    }
+    @keyframes glow{
+      0%,100%{box-shadow:0 0 20px rgba(255,159,243,.3)}
+      50%{box-shadow:0 0 40px rgba(255,159,243,.5)}
+    }
+    @keyframes shimmer{
+      0%{background-position:-200% 0}
+      100%{background-position:200% 0}
+    }
+    @keyframes spin-slow{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+
+    *{ box-sizing:border-box }
+    html{ scroll-behavior:smooth }
+    body{
+      margin:0;
+      font-family: 'Segoe UI', ui-sans-serif, system-ui, -apple-system, Roboto, Arial;
+      color: var(--text);
+      background:
+        radial-gradient(600px 400px at 20% 10%, rgba(255,159,243,.15), transparent 50%),
+        radial-gradient(600px 400px at 80% 20%, rgba(84,160,255,.12), transparent 50%),
+        radial-gradient(500px 300px at 60% 80%, rgba(254,202,87,.10), transparent 50%),
+        linear-gradient(180deg, var(--bg), var(--bg2));
+      overflow-x:hidden;
+    }
+
+    .aesthetic-bg{
+      position:fixed;
+      top:0;left:0;width:100%;height:100%;
+      pointer-events:none;
+      z-index:-1;
+      overflow:hidden;
+    }
+    .orb{
+      position:absolute;
+      border-radius:50%;
+      filter:blur(80px);
+      opacity:.5;
+      animation:float 8s ease-in-out infinite;
+    }
+    .orb-1{width:400px;height:400px;background:rgba(255,159,243,.4);top:-100px;left:-100px;animation-delay:0s}
+    .orb-2{width:300px;height:300px;background:rgba(84,160,255,.35);top:50%;right:-50px;animation-delay:2s}
+    .orb-3{width:350px;height:350px;background:rgba(254,202,87,.3);bottom:-100px;left:30%;animation-delay:4s}
+
+    /* 3D Objects */
+    .obj3d{
+      position:absolute;
+      transform-style:preserve-3d;
+      pointer-events:none;
+    }
+    .cube{
+      width:60px;height:60px;
+      transform:rotateX(20deg) rotateY(30deg);
+    }
+    .cube div{
+      position:absolute;
+      width:60px;height:60px;
+      border:2px solid rgba(255,159,243,0.3);
+      background:rgba(255,159,243,0.05);
+    }
+    .cube div:nth-child(1){transform:translateZ(30px)}
+    .cube div:nth-child(2){transform:rotateY(180deg) translateZ(30px)}
+    .cube div:nth-child(3){transform:rotateY(90deg) translateZ(30px)}
+    .cube div:nth-child(4){transform:rotateY(-90deg) translateZ(30px)}
+    .cube div:nth-child(5){transform:rotateX(90deg) translateZ(30px)}
+    .cube div:nth-child(6){transform:rotateX(-90deg) translateZ(30px)}
+    .obj1{top:15%;left:8%;animation:floatCube 12s ease-in-out infinite}
+    @keyframes floatCube{0%,100%{transform:rotateX(20deg) rotateY(30deg) translateY(0)}50%{transform:rotateX(60deg) rotateY(180deg) translateY(-30px)}}
+
+    .cube2{
+      width:40px;height:40px;
+    }
+    .cube2 div{
+      width:40px;height:40px;
+      border-color:rgba(84,160,255,0.3);
+      background:rgba(84,160,255,0.05);
+    }
+    .cube2 div:nth-child(1){transform:translateZ(20px)}
+    .cube2 div:nth-child(2){transform:rotateY(180deg) translateZ(20px)}
+    .cube2 div:nth-child(3){transform:rotateY(90deg) translateZ(20px)}
+    .cube2 div:nth-child(4){transform:rotateY(-90deg) translateZ(20px)}
+    .cube2 div:nth-child(5){transform:rotateX(90deg) translateZ(20px)}
+    .cube2 div:nth-child(6){transform:rotateX(-90deg) translateZ(20px)}
+    .obj2{top:60%;right:12%;animation:floatCube2 10s ease-in-out infinite}
+    @keyframes floatCube2{0%,100%{transform:rotateX(-20deg) rotateY(-30deg) translateY(0)}50%{transform:rotateX(40deg) rotateY(120deg) translateY(-40px)}}
+
+    .ring{
+      width:100px;height:100px;
+      border-radius:50%;
+      border:3px solid rgba(254,202,87,0.25);
+      box-shadow:0 0 30px rgba(254,202,87,0.1),inset 0 0 30px rgba(254,202,87,0.1);
+      animation:spinRing 20s linear infinite;
+    }
+    .obj3{top:40%;left:5%;animation:floatRing 8s ease-in-out infinite}
+    @keyframes spinRing{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+    @keyframes floatRing{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-20px) rotate(180deg)}}
+
+    .ring2{
+      width:70px;height:70px;
+      border:2px solid rgba(255,159,243,0.2);
+      animation:spinRing2 15s linear infinite reverse;
+    }
+    .obj4{top:25%;right:8%;animation:floatRing2 10s ease-in-out infinite}
+    @keyframes spinRing2{from{transform:rotate(0deg)}to{transform:rotate(-360deg)}}
+    @keyframes floatRing2{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(30px) rotate(-180deg)}}
+
+    .icosa{
+      width:80px;height:80px;
+      animation:spinIcosa 25s linear infinite;
+    }
+    .icosa::before,.icosa::after{
+      content:"";position:absolute;width:100%;height:100%;
+      border:2px solid rgba(84,160,255,0.2);
+      clip-path:polygon(50% 0%,100% 38%,82% 100%,18% 100%,0% 38%);
+    }
+    .icosa::after{transform:rotateY(90deg)}
+    .obj5{bottom:20%;left:15%;animation:floatIcosa 12s ease-in-out infinite}
+    @keyframes spinIcosa{from{transform:rotateX(0deg) rotateY(0deg)}to{transform:rotateX(360deg) rotateY(360deg)}}
+    @keyframes floatIcosa{0%,100%{transform:translateY(0)}50%{transform:translateY(-25px)}}
+
+    .dotSphere{
+      width:50px;height:50px;
+      border-radius:50%;
+      background:radial-gradient(circle at 30% 30%,rgba(255,159,243,0.3),rgba(84,160,255,0.2));
+      box-shadow:0 0 40px rgba(255,159,243,0.2);
+      animation:floatSphere 6s ease-in-out infinite;
+    }
+    .obj6{bottom:30%;right:20%;animation:floatSphere2 8s ease-in-out infinite}
+    @keyframes floatSphere{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-20px) scale(1.1)}}
+    @keyframes floatSphere2{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(15px) scale(0.95)}}
+
+    .glass{
+      background:rgba(255,255,255,.03);
+      backdrop-filter:blur(20px);
+      -webkit-backdrop-filter:blur(20px);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:24px;
+    }
+
+    a{ color:inherit; text-decoration:none }
+    a:hover{ opacity:.92 }
+
+    .wrap{ max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+
+    /* NAV */
+    .nav{
+      position: sticky;
+      top:0;
+      z-index:50;
+      background: rgba(26,22,37,.80);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      animation:fadeDown 0.6s ease-out;
+    }
+    @keyframes fadeDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
+    .navin{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding: 16px 0;
+      gap: 14px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-weight: 850;
+      letter-spacing: -.2px;
+    }
+    .logoBox{
+      width: 44px; height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(255,159,243,.25), rgba(84,160,255,.25));
+      border: 1px solid rgba(255,159,243,.35);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow: 0 10px 30px rgba(0,0,0,.22), 0 0 20px rgba(255,159,243,.2);
+      animation:logoGlow 3s ease-in-out infinite;
+      perspective: 100px;
+    }
+    @keyframes logoGlow{
+      0%,100%{box-shadow: 0 10px 30px rgba(0,0,0,.22), 0 0 20px rgba(255,159,243,.2)}
+      50%{box-shadow: 0 10px 30px rgba(0,0,0,.22), 0 0 35px rgba(255,159,243,.4)}
+    }
+    .logoText{
+      font-size: 18px;
+      font-weight: 900;
+      color: #fff;
+      text-shadow: 0 2px 4px rgba(0,0,0,.3);
+      transform: rotateX(10deg) rotateY(-5deg);
+      letter-spacing: -1px;
+      background: linear-gradient(135deg, #fff 40%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .navlinks{
+      display:none;
+      align-items:center;
+      gap: 26px;
+      color: rgba(255,255,255,.78);
+      font-size: 13px;
+    }
+    .navlinks a{
+      padding: 6px 0;
+      border-bottom: 2px solid transparent;
+      transition:all .3s ease;
+    }
+    .navlinks a:hover{
+      border-bottom-color: rgba(255,159,243,.55);
+      color: var(--accent);
+    }
+
+    .actions{
+      display:flex;
+      gap: 10px;
+      align-items:center;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      font-size: 13px;
+      transition: transform .2s ease, background .2s ease, border-color .2s ease, box-shadow .2s ease;
+      white-space:nowrap;
+    }
+    .btn:hover{
+      transform: translateY(-2px);
+      background: rgba(255,159,243,.12);
+      border-color: rgba(255,159,243,.35);
+      box-shadow: 0 12px 35px rgba(255,159,243,.15);
+      text-decoration:none;
+    }
+    .btn.solid{
+      border: none;
+      color: #1a1625;
+      font-weight: 900;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: 0 14px 38px rgba(255,159,243,.25);
+    }
+    .btn.solid:hover{ 
+      filter: brightness(1.05);
+      box-shadow: 0 14px 45px rgba(255,159,243,.4);
+    }
+    .btn.accent{
+      border: 1px solid rgba(84,160,255,.4);
+      color: #fff;
+      font-weight: 600;
+      background: linear-gradient(135deg, rgba(84,160,255,.2), rgba(255,159,243,.15));
+      box-shadow: 0 8px 25px rgba(84,160,255,.15);
+    }
+    .btn.accent:hover{
+      background: linear-gradient(135deg, rgba(84,160,255,.35), rgba(255,159,243,.25));
+      border-color: rgba(84,160,255,.6);
+      box-shadow: 0 12px 40px rgba(84,160,255,.25);
+      transform: translateY(-2px);
+    }
+    .btn.ghost{
+      background: rgba(255,255,255,.03);
+    }
+    .btn.ghost:hover{
+      background: rgba(84,160,255,.12);
+      border-color: rgba(84,160,255,.35);
+    }
+
+    @media (min-width: 920px){
+      .navlinks{ display:flex; }
+    }
+
+    /* HERO */
+    .hero{
+      padding: 56px 0 26px;
+      display:grid;
+      gap: 26px;
+      grid-template-columns: 1fr;
+      align-items:center;
+    }
+    @media (min-width: 980px){
+      .hero{ grid-template-columns: 1.05fr .95fr; }
+    }
+
+    .hero>div{animation:fadeUp 0.8s ease-out}
+    .hero>div:nth-child(2){animation-delay:0.2s}
+
+    .kicker{
+      display:inline-flex;
+      align-items:center;
+      gap: 10px;
+      font-size: 12px;
+      letter-spacing: .8px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.74);
+      animation:fadeUp 0.6s ease-out 0.1s both;
+    }
+    .kickerDot{
+      width: 10px; height: 10px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 0 6px rgba(255,159,243,.15);
+      animation:pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.2);opacity:.8}}
+
+    h1{
+      margin: 14px 0 0;
+      font-size: clamp(44px, 4.6vw, 64px);
+      line-height: 1.02;
+      letter-spacing: -1px;
+      -webkit-text-fill-color: #fff;
+      color: #fff;
+      text-shadow: 0 0 40px rgba(255,159,243,0.4);
+      font-weight: 800;
+    }
+    .role{
+      margin-top: 14px;
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: .2px;
+      color: var(--accent);
+    }
+    .summary{
+      margin-top: 12px;
+      max-width: 62ch;
+      color: rgba(255,255,255,.80);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+    .heroActions{
+      margin-top: 18px;
+      display:flex;
+      gap: 12px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+    .heroActions .btn{animation:fadeUp 0.6s ease-out 0.4s both}
+    .heroActions .btn:nth-child(2){animation-delay:0.5s}
+    .heroActions .btn:nth-child(3){animation-delay:0.6s}
+
+    .metaRow{
+      margin-top: 16px;
+      color: rgba(255,255,255,.62);
+      font-size: 13px;
+      display:flex;
+      flex-wrap:wrap;
+      gap: 10px;
+      align-items:center;
+    }
+    .metaPill{
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      transition:all .3s ease;
+    }
+    .metaPill:hover{
+      background: rgba(255,159,243,.1);
+      border-color: rgba(255,159,243,.3);
+    }
+    .metaPill b{ color: rgba(255,255,255,.88) }
+
+    /* Right illustration */
+    .illusCard{
+      border-radius: 26px;
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border: 1px solid rgba(255,255,255,.12);
+      box-shadow: 0 18px 55px rgba(0,0,0,.55);
+      overflow:hidden;
+      position:relative;
+      min-height: 360px;
+      display:grid;
+      place-items:center;
+      animation:float 6s ease-in-out infinite, fadeUp 0.8s ease-out 0.3s both;
+    }
+    .illusCard::before{
+      content:"";
+      position:absolute;
+      inset:-2px;
+      background:
+        radial-gradient(520px 280px at 70% 30%, rgba(255,159,243,.15), transparent 60%),
+        radial-gradient(520px 280px at 20% 90%, rgba(84,160,255,.12), transparent 62%);
+      pointer-events:none;
+    }
+    .illusInner{
+      position:relative;
+      z-index:1;
+      width: 100%;
+      height: 100%;
+      display:grid;
+      place-items:center;
+      padding: 26px;
+    }
+    .avatar{
+      width: min(430px, 92%);
+      aspect-ratio: 1 / 1;
+      border-radius: 28px;
+      object-fit: cover;
+      border: 1px solid rgba(255,255,255,.15);
+      background: rgba(255,255,255,.02);
+      box-shadow: 0 18px 50px rgba(0,0,0,.40);
+    }
+    .placeholder{
+      width: min(430px, 92%);
+      aspect-ratio: 1 / 1;
+      border-radius: 28px;
+      border: 1px dashed rgba(255,255,255,.16);
+      background: rgba(0,0,0,.22);
+      display:grid;
+      place-items:center;
+      padding: 22px;
+      text-align:center;
+      color: rgba(255,255,255,.70);
+    }
+    .placeholder b{ color: rgba(255,255,255,.88) }
+    .placeholder .hint{ margin-top: 10px; font-size: 13px; color: rgba(255,255,255,.58); line-height:1.5 }
+
+    /* SECTIONS */
+    .section{
+      padding: 22px 0 32px;
+      scroll-margin-top: 90px;
+    }
+    .sectionHead{
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap: 14px;
+      margin: 10px 0 14px;
+    }
+    .sectionHead h2{
+      margin:0;
+      font-size: 20px;
+      letter-spacing: -.2px;
+    }
+    .sectionHead p{
+      margin:0;
+      color: rgba(255,255,255,.68);
+      font-size: 13px;
+    }
+    .divider{
+      height:1px;
+      background: linear-gradient(90deg, transparent, rgba(255,159,243,.2), transparent);
+      margin: 18px 0 6px;
+    }
+
+    /* Cards / grids like before */
+    .grid2{ display:grid; gap: 14px; grid-template-columns: 1fr }
+    @media (min-width: 980px){ .grid2{ grid-template-columns: 1fr 1fr } }
+
+    .proj{
+      padding: 16px;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      transition: transform .2s ease, border-color .2s ease, background .2s ease, box-shadow .2s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .proj::before{
+      content:"";
+      position:absolute;
+      top:0;left:0;right:0;height:2px;
+      background:linear-gradient(90deg, var(--accent), var(--accent3));
+      opacity:0;
+      transition:opacity .3s ease;
+    }
+    .proj:hover{
+      transform: translateY(-4px);
+      border-color: rgba(255,159,243,.35);
+      background: rgba(255,159,243,.05);
+      box-shadow: 0 18px 55px rgba(255,159,243,.15);
+    }
+    .proj:hover::before{opacity:1}
+    .ptop{
+      display:flex; align-items:flex-start; justify-content:space-between; gap: 10px;
+    }
+    .ptitle{
+      font-weight: 900;
+      letter-spacing: -.2px;
+      font-size: 16px;
+      margin:0;
+    }
+    .pdesc{
+      margin: 8px 0 0;
+      color: rgba(255,255,255,.68);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+    ul{
+      margin: 10px 0 0;
+      padding-left: 18px;
+      color: rgba(255,255,255,.86);
+      line-height: 1.55;
+      font-size: 13px;
+    }
+    li{ margin: 6px 0 }
+
+    .metrics{
+      display:flex; flex-wrap:wrap; gap:8px;
+      margin-top: 12px;
+    }
+    .mchip{
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      color: rgba(255,255,255,.82);
+      transition:all .2s ease;
+    }
+    .mchip:hover{
+      transform:scale(1.05);
+    }
+    .mchip.cool{ border-color: rgba(84,160,255,.35); background: rgba(84,160,255,.1); }
+    .mchip.good{ border-color: rgba(255,159,243,.35); background: rgba(255,159,243,.1); }
+
+    .proj{animation:fadeUp 0.6s ease-out both}
+    .grid2 .proj:nth-child(1){animation-delay:0.1s}
+    .grid2 .proj:nth-child(2){animation-delay:0.2s}
+    .grid2 .proj:nth-child(3){animation-delay:0.3s}
+    .grid2 .proj:nth-child(4){animation-delay:0.4s}
+    .grid2 .proj:nth-child(5){animation-delay:0.5s}
+
+    .proj .pdesc a{
+      color: var(--accent);
+      transition:all .2s ease;
+    }
+    .proj .pdesc a:hover{
+      color: var(--accent2);
+      text-decoration:underline;
+    }
+
+    .section#contact .grid2 .proj{animation:fadeUp 0.6s ease-out both}
+    .section#contact .grid2 .proj:nth-child(1){animation-delay:0.1s}
+    .section#contact .grid2 .proj:nth-child(2){animation-delay:0.15s}
+    .section#contact .grid2 .proj:nth-child(3){animation-delay:0.2s}
+    .section#contact .grid2 .proj:nth-child(4){animation-delay:0.25s}
+    .section#contact .grid2 .proj a{
+      color: var(--accent);
+      transition:all .2s ease;
+    }
+    .section#contact .grid2 .proj a:hover{
+      color: var(--accent2);
+    }
+
+    .footer{
+      padding: 26px 0 46px;
+      color: rgba(255,255,255,.52);
+      font-size: 12px;
+      text-align:center;
+      border-top: 1px solid rgba(255,255,255,.06);
+      margin-top: 20px;
+      animation:fadeIn 1s ease-out 0.5s both;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="aesthetic-bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    
+    <!-- 3D Objects -->
+    <div class="obj3d obj1 cube" data-scroll-speed="0.05">
+      <div></div><div></div><div></div><div></div><div></div><div></div>
+    </div>
+    <div class="obj3d obj2 cube2" data-scroll-speed="0.08">
+      <div></div><div></div><div></div><div></div><div></div><div></div>
+    </div>
+    <div class="obj3d obj3 ring" data-scroll-speed="0.03"></div>
+    <div class="obj3d obj4 ring2" data-scroll-speed="0.06"></div>
+    <div class="obj3d obj5 icosa" data-scroll-speed="0.04"></div>
+    <div class="obj3d obj6 dotSphere" data-scroll-speed="0.07"></div>
+  </div>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="wrap navin">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="logoBox"><span class="logoText">TP</span></span>
+        <span>Tejas Patel</span>
+      </a>
+
+      <nav class="navlinks" aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="actions">
+        <a class="btn accent" href="https://github.com/tejas1996p" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn accent" href="https://www.linkedin.com/in/tejas1996p" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="btn solid" href="#projects">Projects</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap" id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <div class="kicker"><span class="kickerDot"></span> HI THERE 👋 I'M</div>
+
+        <h1>Tejas Patel</h1>
+
+        <div class="role">SENIOR UI/UX DESIGNER & FRONT-END DEVELOPER</div>
+
+        <p class="summary">
+          I build user-centered web and mobile solutions with a focus on <b>design systems</b>, <b>responsive interfaces</b>, 
+          and <b>performance optimization</b>. Expert in Angular and React, with a passion for crafting pixel-perfect implementations 
+          and improving user satisfaction through thoughtful design.
+        </p>
+
+        <div class="heroActions">
+          <a class="btn accent" href="mailto:tejaspatell1009@gmail.com">Email</a>
+          <a class="btn accent" href="Resume - Tejas Patel.pdf" target="_blank" rel="noreferrer">Resume</a>
+          <a class="btn accent" href="#contact">Contact</a>
+        </div>
+
+        <div class="metaRow">
+          <span class="metaPill"><b>Brampton, ON</b></span>
+          <span class="metaPill">Northumbria University — <b>MSc Computing</b></span>
+          <span class="metaPill">Angular • React • Figma • TypeScript</span>
+        </div>
+      </div>
+
+      <div class="illusCard" aria-label="Profile Illustration">
+        <div class="illusInner">
+          <img
+            class="avatar"
+            src="avatar.jpg"
+            alt="Tejas Patel"
+            loading="lazy"
+            onerror="this.style.display='none'; document.getElementById('avatarFallback').style.display='grid';"
+          />
+
+          <div class="placeholder" id="avatarFallback" style="display:none;">
+            <div>
+              <b>Couldn't load avatar.jpg</b>
+              <div class="hint">
+                Make sure the file name is exactly <b>avatar.jpg</b> (case-sensitive) and in the same folder as <b>index.html</b>.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="sectionHead">
+        <div>
+          <h1 style="animation:fadeUp 0.6s ease-out">Featured Projects</h1>
+          <p>Full-stack design and development work</p>
+        </div>
+      </div>
+
+      <div class="grid2">
+        <!-- Wine-Beer -->
+        <div class="proj">
+          <div class="ptop">
+            <div>
+              <p class="ptitle">Wine-Beer</p>
+              <p class="pdesc">E-commerce platform showcasing modern UI design and responsive development.</p>
+            </div>
+            <a class="btn" href="https://github.com/tejas1996p/Wine-Beer" target="_blank" rel="noreferrer">Repo</a>
+          </div>
+
+          <ul>
+            <li>Built responsive product catalog with advanced filtering and search capabilities.</li>
+            <li>Implemented smooth checkout experience with intuitive form design.</li>
+            <li>Optimized performance with lazy loading and image optimization.</li>
+          </ul>
+
+          <div class="metrics">
+            <span class="mchip cool">React</span>
+            <span class="mchip cool">Responsive Design</span>
+            <span class="mchip">E-commerce</span>
+            <span class="mchip">Modern UI</span>
+          </div>
+        </div>
+
+        <!-- Employee Management System -->
+        <div class="proj">
+          <div class="ptop">
+            <div>
+              <p class="ptitle">Employee Management System</p>
+              <p class="pdesc">Enterprise dashboard for managing employee data with real-time updates.</p>
+            </div>
+            <a class="btn" href="https://github.com/tejas1996p/Employee-Management-System" target="_blank" rel="noreferrer">Repo</a>
+          </div>
+          <ul>
+            <li>Designed clean, intuitive dashboard UI for HR teams.</li>
+            <li>Built data tables with pagination, sorting, and filtering.</li>
+            <li>Implemented CRUD operations with form validation.</li>
+            <li>Applied accessibility standards (WCAG) throughout.</li>
+          </ul>
+          <div class="metrics">
+            <span class="mchip cool">Angular</span>
+            <span class="mchip cool">Dashboard</span>
+            <span class="mchip">Data Management</span>
+            <span class="mchip">Enterprise</span>
+            <span class="mchip good">Accessibility</span>
+          </div>
+        </div>
+
+        <!-- Bank Payment Interface -->
+        <div class="proj">
+          <div class="ptop">
+            <div>
+              <p class="ptitle">Bank Payment Interface - Modern Design UI</p>
+              <p class="pdesc">Premium financial UI showcasing modern design principles and usability.</p>
+            </div>
+            <a class="btn" href="https://github.com/tejas1996p/Bank-Payment-Interface-Mordern-Design-UI" target="_blank" rel="noreferrer">Repo</a>
+          </div>
+          <ul>
+            <li>Designed pixel-perfect payment interface with micro-interactions.</li>
+            <li>Implemented secure form validation and error handling.</li>
+            <li>Applied financial UX best practices for trust and clarity.</li>
+            <li>Optimized mobile experience for on-the-go banking.</li>
+          </ul>
+          <div class="metrics">
+            <span class="mchip cool">Figma Design</span>
+            <span class="mchip cool">UI/UX</span>
+            <span class="mchip">FinTech</span>
+            <span class="mchip">Mobile-First</span>
+            <span class="mchip good">Modern Design</span>
+          </div>
+        </div>
+
+        <!-- E-commerce Dashboard -->
+        <div class="proj">
+          <div class="ptop">
+            <div>
+              <p class="ptitle">E-commerce Dashboard</p>
+              <p class="pdesc">Comprehensive analytics and management dashboard for online stores.</p>
+            </div>
+            <a class="btn" href="https://github.com/tejas1996p/Ecommerce-Dashbord" target="_blank" rel="noreferrer">Repo</a>
+          </div>
+          <ul>
+            <li>Created data visualization with charts and key metrics.</li>
+            <li>Built responsive layout using CSS Grid and Flexbox.</li>
+            <li>Implemented real-time data updates and filtering.</li>
+            <li>Optimized change detection for performance.</li>
+          </ul>
+          <div class="metrics">
+            <span class="mchip cool">Angular</span>
+            <span class="mchip cool">Dashboard</span>
+            <span class="mchip">Data Visualization</span>
+            <span class="mchip">Performance</span>
+            <span class="mchip good">Analytics</span>
+          </div>
+        </div>
+
+        <!-- Restaurant Website -->
+        <div class="proj">
+          <div class="ptop">
+            <div>
+              <p class="ptitle">Restaurant Website</p>
+              <p class="pdesc">Modern restaurant site with menu showcase and reservation system.</p>
+            </div>
+            <a class="btn" href="https://github.com/tejas1996p/Restaurant-Website" target="_blank" rel="noreferrer">Repo</a>
+          </div>
+          <ul>
+            <li>Designed elegant, mobile-responsive website layout.</li>
+            <li>Built interactive menu with filtering and search.</li>
+            <li>Implemented reservation booking system with validation.</li>
+            <li>Optimized images and content for fast loading.</li>
+          </ul>
+          <div class="metrics">
+            <span class="mchip cool">React</span>
+            <span class="mchip cool">Web Design</span>
+            <span class="mchip">Responsive</span>
+            <span class="mchip">UX Design</span>
+            <span class="mchip good">Performance</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="sectionHead">
+        <div>
+          <h2 style="animation:fadeUp 0.6s ease-out">Experience</h2>
+          <p>Impact and design outcomes</p>
+        </div>
+      </div>
+
+      <div class="grid2">
+        <div class="proj">
+          <div class="ptop">
+            <div>
+              <p class="ptitle">Senior UI/UX Designer — Glorywebs</p>
+              <p class="pdesc">Sep 2024 – Present</p>
+            </div>
+          </div>
+          <ul>
+            <li>Led end-to-end UX design for responsive web applications using Figma and Adobe XD.</li>
+            <li>Designed scalable design systems and reusable UI components, reducing design-to-development time by <b>30%</b>.</li>
+            <li>Conducted user interviews and usability testing, improving product usability and reducing friction.</li>
+            <li>Improved conversion rates by <b>15%</b> through optimized user flows and onboarding design.</li>
+            <li>Applied WCAG 2.1 accessibility standards throughout designs for inclusive experiences.</li>
+            <li>Collaborated in Agile/Scrum sprints with Angular and React frontend teams for pixel-perfect implementation.</li>
+          </ul>
+          <div class="metrics">
+            <span class="mchip cool">Figma</span>
+            <span class="mchip cool">Design Systems</span>
+            <span class="mchip">UX Research</span>
+            <span class="mchip">Accessibility</span>
+            <span class="mchip good">+15% Conversion</span>
+          </div>
+        </div>
+
+        <div class="proj">
+          <div class="ptop">
+            <div>
+              <p class="ptitle">Front-End Developer & UI Engineer — Ibrainers Ltd</p>
+              <p class="pdesc">Mar 2020 – May 2024</p>
+            </div>
+          </div>
+          <ul>
+            <li>Designed and developed responsive web applications with Angular and React, delivering faster load times.</li>
+            <li>Translated Figma and Adobe XD wireframes into pixel-perfect, reusable UI components.</li>
+            <li>Implemented component-based architecture, reducing development effort for new features.</li>
+            <li>Optimized performance with lazy loading, code splitting, and OnPush change detection, reducing initial load time.</li>
+            <li>Developed reusable UI libraries using Angular shared modules and React component patterns.</li>
+            <li>Integrated REST APIs via Angular HttpClient and Axios, enabling real-time data display.</li>
+            <li>Ensured cross-browser compatibility across Chrome, Firefox, Safari, and Edge.</li>
+          </ul>
+          <div class="metrics">
+            <span class="mchip cool">Angular</span>
+            <span class="mchip cool">React</span>
+            <span class="mchip">TypeScript</span>
+            <span class="mchip">Performance</span>
+            <span class="mchip good">Component Design</span>
+          </div>
+        </div>
+
+        <div class="proj">
+          <div class="ptop">
+            <div>
+              <p class="ptitle">UI/UX Designer — Glorywebs</p>
+              <p class="pdesc">Sep 2018 – Jan 2020</p>
+            </div>
+          </div>
+          <ul>
+            <li>Designed responsive web and mobile interfaces with Figma, Adobe XD, and Sketch.</li>
+            <li>Conducted user research, surveys, and usability testing to improve satisfaction.</li>
+            <li>Created wireframes, prototypes, and high-fidelity mockups for rapid stakeholder feedback.</li>
+            <li>Developed reusable design systems and component libraries, decreasing design time.</li>
+            <li>Improved user engagement by redesigning dashboards and reducing bounce rate.</li>
+            <li>Applied Material Design and Human Interface Guidelines for consistency.</li>
+          </ul>
+          <div class="metrics">
+            <span class="mchip cool">Figma</span>
+            <span class="mchip cool">Adobe XD</span>
+            <span class="mchip">User Research</span>
+            <span class="mchip">Prototyping</span>
+            <span class="mchip good">Design Systems</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="sectionHead">
+        <div>
+          <h2 style="animation:fadeUp 0.6s ease-out">Skills</h2>
+          <p>Core competencies</p>
+        </div>
+      </div>
+
+      <div class="grid2">
+        <div class="proj">
+          <p class="ptitle">Design & UI/UX</p>
+          <div class="metrics" style="margin-top:10px">
+            <span class="mchip cool">Figma</span>
+            <span class="mchip cool">Adobe XD</span>
+            <span class="mchip cool">Design Systems</span>
+            <span class="mchip">Wireframing</span>
+            <span class="mchip">Prototyping</span>
+            <span class="mchip">User Research</span>
+            <span class="mchip">Accessibility (WCAG)</span>
+            <span class="mchip">Responsive Design</span>
+          </div>
+          <div class="divider" style="margin:12px 0"></div>
+          <p class="ptitle">Programming Languages</p>
+          <div class="metrics" style="margin-top:10px">
+            <span class="mchip cool">JavaScript (ES6+)</span>
+            <span class="mchip cool">TypeScript</span>
+            <span class="mchip cool">HTML5</span>
+            <span class="mchip cool">CSS3</span>
+            <span class="mchip">C</span>
+            <span class="mchip">C++</span>
+            <span class="mchip">Java</span>
+          </div>
+        </div>
+
+        <div class="proj">
+          <p class="ptitle">Frameworks & Tools</p>
+          <div class="metrics" style="margin-top:10px">
+            <span class="mchip cool">Angular (v14–18)</span>
+            <span class="mchip cool">React</span>
+            <span class="mchip cool">Bootstrap</span>
+            <span class="mchip cool">Tailwind CSS</span>
+            <span class="mchip">Angular Material</span>
+            <span class="mchip">REST APIs</span>
+            <span class="mchip">Redux / Context API</span>
+            <span class="mchip">NgRx</span>
+            <span class="mchip">PostgreSQL</span>
+            <span class="mchip">Git / GitHub</span>
+            <span class="mchip">VS Code</span>
+            <span class="mchip">JIRA</span>
+            <span class="mchip">Agile / Scrum</span>
+          </div>
+          <div class="divider" style="margin:12px 0"></div>
+          <p class="ptitle">Testing & Performance</p>
+          <div class="metrics" style="margin-top:10px">
+            <span class="mchip cool">Jasmine / Karma</span>
+            <span class="mchip cool">Jest / React Testing Library</span>
+            <span class="mchip">A/B Testing</span>
+            <span class="mchip">Performance Optimization</span>
+            <span class="mchip">Chrome DevTools</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="sectionHead">
+        <div>
+          <h2 style="animation:fadeUp 0.6s ease-out">Contact</h2>
+          <p>Let's connect and create something great</p>
+        </div>
+      </div>
+
+      <div class="grid2">
+        <div class="proj">
+          <p class="ptitle">Email</p>
+          <p class="pdesc" style="margin-top:8px">
+            <a href="mailto:tejaspatell1009@gmail.com">tejaspatell1009@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="proj">
+          <p class="ptitle">Phone</p>
+          <p class="pdesc" style="margin-top:8px">
+            <a href="tel:+14379377156">(437) 937-7156</a>
+          </p>
+        </div>
+
+        <div class="proj">
+          <p class="ptitle">LinkedIn</p>
+          <p class="pdesc" style="margin-top:8px">
+            <a href="https://www.linkedin.com/in/tejas1996p" target="_blank" rel="noreferrer">
+              linkedin.com/in/tejas1996p
+            </a>
+          </p>
+        </div>
+
+        <div class="proj">
+          <p class="ptitle">GitHub</p>
+          <p class="pdesc" style="margin-top:8px">
+            <a href="https://github.com/tejas1996p" target="_blank" rel="noreferrer">
+              github.com/tejas1996p
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      © <span id="year"></span> Tejas Patel • Senior UI/UX Designer & Front-End Developer
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // 3D Objects scroll animation
+    const obj3d = document.querySelectorAll('.obj3d');
+    let lastScrollY = 0;
+    let ticking = false;
+
+    window.addEventListener('scroll', () => {
+      lastScrollY = window.scrollY;
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          obj3d.forEach(obj => {
+            const speed = parseFloat(obj.dataset.scrollSpeed) || 0.05;
+            const rotation = lastScrollY * speed;
+            const yOffset = lastScrollY * speed * 0.5;
+            obj.style.transform = obj.style.transform.includes('rotate') 
+              ? obj.style.transform.replace(/rotate[XY]?\([^)]+\)/g, '').trim() + ` rotateX(${rotation}deg) rotateY(${rotation * 0.7}deg)`
+              : `translateY(${yOffset}px) rotateX(${rotation}deg) rotateY(${rotation * 0.7}deg)`;
+          });
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
+  </script>
+</body>
+</html>

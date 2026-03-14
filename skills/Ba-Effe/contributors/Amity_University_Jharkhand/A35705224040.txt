@@ -1,0 +1,4 @@
+Name: Aman Kumar Mehta
+About Me: Hello, I am a student currently pursuing CSE from Amity University Jharkhand. I have learnt frontend skills such as HTML, CSS, JS and competitive programming languages like C and C++.
+Favourite Film: Ramaiyaa Vastavaiya
+Issue: #42
