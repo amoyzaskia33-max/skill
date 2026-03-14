@@ -4,15 +4,16 @@
 
 ## 📖 Tentang
 
-Repository ini berisi **50+ skills** yang diorganisir berdasarkan kategori, dirancang untuk meningkatkan kemampuan AI agent di berbagai domain:
+Repository ini berisi **60+ skills** yang diorganisir berdasarkan kategori, dirancang untuk meningkatkan kemampuan AI agent di berbagai domain:
 
-- 🎨 **Design & Creative** - Resources UI/UX, design templates
+- 🎨 **Design & Creative** - Resources UI/UX, design templates (29 skills)
 - 💻 **Web Development** - Template frontend, boilerplates
 - 📱 **Mobile Development** - Resources React Native, Flutter
 - 🔧 **Automation & Tools** - Browser automation, testing tools
 - 📚 **Learning Resources** - Roadmaps, interview prep, guides
 - 🏗️ **Boilerplates** - Production-ready starters untuk berbagai stacks
 - 🛡️ **Protection & Licensing** - Blockchain protection untuk karya digital
+- 🆕 **Innovation & Experimental** - Cutting-edge UI/UX concepts (10 new skills!)
 
 ## 🎯 AI Agents yang Kompatibel
 
