@@ -20,6 +20,9 @@ Koleksi skill AI assistant untuk meningkatkan produktivitas dan workflow pengemb
 | **advanced-saas-design** | 💎 Premium SaaS design level enterprise ($100k+ valuation) dengan features canggih yang jarang ada |
 | **creative-animations-advanced** | 🎬 Animasi cinematic tingkat tinggi yang jarang dipakai, wow factor ekstrem |
 | **unique-layout-patterns** | 🌀 Layout patterns unik, experimental, dan unconventional yang jarang ditemukan |
+| **generative-design-systems** | 🔮 Design systems yang generate unique patterns setiap kali - tidak ada dua output yang sama (procedural generation) |
+| **custom-physics-engines** | ⚛️ Physics simulations dengan custom engine dari scratch - movement unique dan sulit direplikasi |
+| **procedural-generation-systems** | 🌍 Procedural content generation untuk infinite unique content - terrain, textures, patterns yang tidak akan pernah sama |
 
 ### 💻 Web Development
 
