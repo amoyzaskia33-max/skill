@@ -1,45 +1,46 @@
 # AI Skills Collection 🚀
 
-> **Universal AI Agent Skills Repository** - A curated collection of skills, templates, and boilerplates compatible with any AI coding agent (Claude Code, Cursor, Codex, OpenCode, Gemini CLI, etc.)
+> **Repositori Skill AI Agent Universal** - Koleksi kurasi skills, templates, dan boilerplates yang kompatibel dengan semua AI coding agent (Claude Code, Cursor, Codex, OpenCode, Gemini CLI, Qwen Code, dll.)
 
-## 📖 About
+## 📖 Tentang
 
-This repository contains **45+ skills** organized by category, designed to enhance AI agent capabilities across different domains:
+Repository ini berisi **50+ skills** yang diorganisir berdasarkan kategori, dirancang untuk meningkatkan kemampuan AI agent di berbagai domain:
 
-- 🎨 **Design & Creative** - UI/UX resources, design templates
-- 💻 **Web Development** - Frontend templates, boilerplates
-- 📱 **Mobile Development** - React Native, Flutter resources
+- 🎨 **Design & Creative** - Resources UI/UX, design templates
+- 💻 **Web Development** - Template frontend, boilerplates
+- 📱 **Mobile Development** - Resources React Native, Flutter
 - 🔧 **Automation & Tools** - Browser automation, testing tools
 - 📚 **Learning Resources** - Roadmaps, interview prep, guides
-- 🏗️ **Boilerplates** - Production-ready starters for various stacks
+- 🏗️ **Boilerplates** - Production-ready starters untuk berbagai stacks
+- 🛡️ **Protection & Licensing** - Blockchain protection untuk karya digital
 
-## 🎯 Compatible AI Agents
+## 🎯 AI Agents yang Kompatibel
 
-These skills work with:
+Skills ini bekerja dengan:
 
-| Agent | Installation |
-|-------|-------------|
-| **Claude Code** | `/plugin install` or manual |
-| **Cursor** | `/add-plugin` or manual |
-| **Codex** | Fetch and follow instructions |
-| **OpenCode** | Fetch and follow instructions |
+| Agent | Instalasi |
+|-------|-----------|
+| **Claude Code** | `/plugin install` atau manual |
+| **Cursor** | `/add-plugin` atau manual |
+| **Codex** | Fetch dan follow instructions |
+| **OpenCode** | Fetch dan follow instructions |
 | **Gemini CLI** | `gemini extensions install` |
-| **Qwen Code** | Manual install to skills folder |
+| **Qwen Code** | Manual install ke folder skills |
 | **Any Agent** | Manual folder copy |
 
-## 📦 Installation
+## 📦 Instalasi
 
-### Option 1: Clone Directly (Recommended)
+### Opsi 1: Clone Langsung (Recommended)
 
 ```bash
-# Clone to your AI agent's skills folder
-git clone https://github.com/YOUR_USERNAME/ai-skills-collection.git
+# Clone ke folder skills AI agent kamu
+git clone https://github.com/amoyzaskia33-max/skill.git
 
-# Or copy specific skills you need
+# Atau copy skills spesifik yang dibutuhkan
 cp -r ai-skills-collection/skills/* /path/to/your/agent/skills/
 ```
 
-### Option 2: Download Specific Skills
+### Opsi 2: Download Skills Tertentu
 
 ```bash
 # Download individual skills
@@ -48,40 +49,51 @@ git sparse-checkout set skills/adminlte-template skills/react-roadmap
 git checkout
 ```
 
-### Option 3: Agent-Specific
+### Opsi 3: Agent-Specific
 
-See [INSTALL.md](./INSTALL.md) for agent-specific installation guides.
+Lihat [INSTALL.md](./INSTALL.md) untuk panduan instalasi agent-specific.
 
-## 📚 Skills Catalog
+## 📚 Katalog Skills
 
-### 🎨 Design & Creative (4 skills)
+### 🎨 Design & Creative (19 skills)
 
-| Skill | Description | Size |
-|-------|-------------|------|
-| `ba-effe` | Effervescence festival design (70s-80s Bollywood) | 391 MB |
-| `ux-resource` | UI/UX design references and resources | ~50 MB |
-| `design-resources` | Design tools, tutorials, inspiration | ~30 MB |
-| `awesome-portfolio-templates` | GitHub Pages portfolio collection | ~100 MB |
+| Skill | Deskripsi | Bahasa |
+|-------|-----------|--------|
+| `ba-effe` | Design festival Effervescence (70s-80s Bollywood) | 🇮🇩 |
+| `ux-resource` | Referensi dan resources design UI/UX | 🇮🇩 |
+| `design-resources` | Design tools, tutorials, inspiration | 🇮🇩 |
+| `awesome-portfolio-templates` | Koleksi portfolio GitHub Pages | 🇮🇩 |
+| `auto-design-agent` | 🤖 AI agent yang otomatis tawarkan variasi design | 🇮🇩 |
+| `design-variations` | 🎨 Generator variasi design UI/UX | 🇮🇩 |
+| `uiux-best-practices` | 📐 Panduan lengkap UI/UX best practices | 🇮🇩 |
+| `advanced-saas-design` | 💎 Premium SaaS design enterprise level | 🇮🇩 |
+| `creative-animations-advanced` | 🎬 Animasi cinematic tingkat tinggi | 🇮🇩 |
+| `unique-layout-patterns` | 🌀 Layout patterns unik & experimental | 🇮🇩 |
+| `generative-design-systems` | 🔮 Design systems dengan procedural generation | 🇮🇩 |
+| `custom-physics-engines` | ⚛️ Physics simulations custom engine | 🇮🇩 |
+| `procedural-generation-systems` | 🌍 Procedural content generation infinite | 🇮🇩 |
+| `lightweight-generative-art` | ⚡ Generative art optimized performance | 🇮🇩 |
+| `generative-artist-positioning` | 🎯 Strategy positioning pioneer artist | 🇮🇩 |
+| `quantum-aesthetic-entanglement` | 🧬 **BARU!** UI quantum-inspired | 🇮🇩 |
+| `temporal-morphing-interface` | 🕰️ **BARU!** UI yang berevolusi waktu | 🇮🇩 |
+| `neuro-adaptive-aesthetic` | 🧠 **BARU!** Biofeedback adaptation | 🇮🇩 |
+| `chaos-fractal-resonance` | 🔮 **BARU!** Chaos + fractals art | 🇮🇩 |
 
-### 💻 Web Development (10 skills)
+### 💻 Web Development (6 skills)
 
-| Skill | Description | Framework |
-|-------|-------------|-----------|
-| `dms-tech-lab` | Corporate website with Next.js + TypeScript | Next.js |
+| Skill | Deskripsi | Framework |
+|-------|-----------|-----------|
+| `dms-tech-lab` | Corporate showcase website | Next.js + TS |
 | `gsap-animations-website` | Scroll-triggered GSAP animations | React + Vite |
 | `enegix-template` | Business HTML template | HTML/Bootstrap |
 | `shopnest-ecommerce` | Multi-vendor e-commerce marketplace | Next.js 15 |
 | `developer-folio` | React developer portfolio | React |
 | `developer-portfolio-said` | Modern Next.js portfolio | Next.js |
-| `open-react-template` | SaaS landing page template | React |
-| `startbootstrap-landing` | Bootstrap landing pages | Bootstrap |
-| `andromeda-premium-template` | Modern Next.js website | Next.js |
-| `shadcn-ui-components` | React UI components | Radix + Tailwind |
 
 ### 📱 Mobile Development (4 skills)
 
-| Skill | Description | Platform |
-|-------|-------------|----------|
+| Skill | Deskripsi | Platform |
+|-------|-----------|----------|
 | `react-native-boilerplate` | React Native + Expo + Supabase | iOS/Android |
 | `ignite-boilerplate` | Production React Native (Infinite Red) | iOS/Android |
 | `expo-examples` | Expo example projects | iOS/Android |
@@ -89,33 +101,33 @@ See [INSTALL.md](./INSTALL.md) for agent-specific installation guides.
 
 ### 🔧 Automation & Tools (7 skills)
 
-| Skill | Description | Type |
-|-------|-------------|------|
+| Skill | Deskripsi | Tipe |
+|-------|-----------|------|
 | `browser-use` | AI-controlled browser automation | Tool |
 | `appium-automation` | Mobile app testing automation | Tool |
 | `ios-repair-tool` | iOS firmware restore (idevicerestore) | Tool |
 | `libimobiledevice` | iOS device communication library | Library |
 | `magisk-root` | Android Magisk root guide | Guide |
-| `android-root-guide` | Complete Android rooting guide | Guide |
+| `android-root-guide` | Panduan lengkap Android rooting | Guide |
 | `fs-poster-wordpress` | WordPress social auto-posting | Plugin |
 
 ### 📚 Learning Resources (8 skills)
 
-| Skill | Description | Type |
-|-------|-------------|------|
-| `fe-interview-questions` | Front-end interview prep | Guide |
-| `fullstack-roadmap` | Full-stack development curriculum | Guide |
-| `react-roadmap` | React development roadmap | Guide |
+| Skill | Deskripsi | Tipe |
+|-------|-----------|------|
+| `fe-interview-questions` | Persiapan interview front-end | Guide |
+| `fullstack-roadmap` | Curriculum full-stack development | Guide |
+| `react-roadmap` | Roadmap React development | Guide |
 | `build-your-own-x` | Learn by building clones | Tutorials |
-| `developer-handbook` | Software engineer career guide | Guide |
+| `developer-handbook` | Career guide software engineer | Guide |
 | `security-guide` | Security best practices | Guide |
 | `awesome-python` | Python frameworks & libraries | Reference |
-| `best-admin-dashboard-collection` | Admin dashboard templates | Collection |
+| `best-admin-dashboard-collection` | Koleksi template admin dashboard | Collection |
 
 ### 🏗️ Boilerplates (8 skills)
 
-| Skill | Description | Stack |
-|-------|-------------|-------|
+| Skill | Deskripsi | Stack |
+|-------|-----------|-------|
 | `saas-boilerplate` | Basic SaaS starter | Node.js |
 | `express-boilerplate` | Express.js API boilerplate | Express |
 | `saas-boilerplate-ixartz` | Premium Next.js SaaS | Next.js + TS |
@@ -124,43 +136,52 @@ See [INSTALL.md](./INSTALL.md) for agent-specific installation guides.
 | `now-ui-dashboard-premium` | Colorful React admin | React |
 | `material-kit-devias` | Professional Material-UI | MUI |
 | `adminlte-template` | Most popular admin template | Bootstrap |
-| `tabler-dashboard` | Modern HTML dashboard | Bootstrap |
-| `coreui-react-admin` | Enterprise React admin | React |
-| `material-dashboard-free` | Free Material dashboard | Material-UI |
-| `wxt-extension-boilerplate` | Browser extension framework | Vite + TS |
+
+### 🛡️ Protection & Licensing (1 skill)
+
+| Skill | Deskripsi | Fitur |
+|-------|-----------|-------|
+| `blockchain-provenance-art` | 🌐 **BARU!** Immutable proof of creation | Smart contract, watermark, royalty |
 
 ### 🚀 Development Workflow (1 collection)
 
-| Skill | Description | Sub-skills |
-|-------|-------------|------------|
+| Skill | Deskripsi | Sub-skills |
+|-------|-----------|------------|
 | `superpowers` | AI agent workflow framework | 14 skills |
 
-## 📊 Statistics
+## 📊 Statistik
 
 ```
-Total Skills: 45+
-Total Size: ~1.6 GB (after cleanup)
-Categories: 7
+Total Skills: 50 skills
+Total Size: ~1.6 GB (setelah cleanup)
+Kategori: 10 categories
+Bahasa: Mixed Indonesia-English
 Compatible Agents: 7+
+Total Lines: 8,000+ dokumentasi + code
 ```
 
-## 🗂️ Repository Structure
+## 🗂️ Struktur Repository
 
 ```
 ai-skills-collection/
-├── README.md                 # This file
-├── INSTALL.md                # Installation guides
-├── SKILL_INDEX.md            # Complete skill index
-├── skills/                   # All skills
-│   ├── SKILL.md              # Main index
+├── README.md                 # File ini (Bahasa Indonesia)
+├── INSTALL.md                # Panduan instalasi
+├── SKILL_INDEX.md            # Index lengkap skills
+├── skills/                   # Semua skills
+│   ├── SKILL.md              # Index utama (Bahasa Indonesia)
+│   ├── quantum-aesthetic-entanglement/  # 🆕 BARU!
+│   ├── temporal-morphing-interface/     # 🆕 BARU!
+│   ├── neuro-adaptive-aesthetic/        # 🆕 BARU!
+│   ├── blockchain-provenance-art/       # 🆕 BARU!
+│   ├── chaos-fractal-resonance/         # 🆕 BARU!
 │   ├── adminlte-template/
 │   ├── awesome-python/
 │   ├── browser-use/
-│   └── ... (45+ skills)
-├── docs/                     # Documentation
-│   ├── agent-guides/         # Agent-specific guides
-│   ├── skill-guides/         # Skill-specific guides
-│   └── tutorials/            # Tutorials
+│   └── ... (45+ skills lainnya)
+├── docs/                     # Dokumentasi
+│   ├── agent-guides/         # Panduan per agent
+│   ├── skill-guides/         # Panduan per skill
+│   └── tutorials/            # Tutorial
 └── scripts/                  # Utility scripts
     ├── install.sh            # Linux/Mac install
     └── install.ps1           # Windows install
@@ -168,48 +189,128 @@ ai-skills-collection/
 
 ## 🚀 Quick Start
 
-### For AI Agents
+### Untuk AI Agents
 
-1. **Clone this repository**
+1. **Clone repository ini**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/ai-skills-collection.git
+   git clone https://github.com/amoyzaskia33-max/skill.git
    ```
 
-2. **Link to your agent**
+2. **Link ke agent kamu**
    ```bash
-   # Example for Claude Code
+   # Contoh untuk Claude Code
    ln -s /path/to/ai-skills-collection/skills ~/.claude/skills
-   
-   # Example for Cursor
+
+   # Contoh untuk Cursor
    ln -s /path/to/ai-skills-collection/skills ~/.cursor/skills
    ```
 
-3. **Start using skills**
-   - Reference skill by name in conversations
-   - Agent will automatically load relevant skills
+3. **Mulai menggunakan skills**
+   - Reference skill by name dalam conversations
+   - Agent akan otomatis load relevant skills
 
-### For Developers
+### Untuk Developers
 
-1. **Browse skills** in `skills/` folder
-2. **Copy what you need** to your project
-3. **Follow SKILL.md** in each folder for usage
+1. **Browse skills** di folder `skills/`
+2. **Copy yang dibutuhkan** ke project kamu
+3. **Ikuti SKILL.md** di setiap folder untuk usage
 
-## 📝 License
+## 🎯 Rekomendasi Penggunaan
 
-This collection aggregates open-source projects. Each skill maintains its original license. Check individual skill folders for specific licenses.
+### Untuk Pemula
 
-## 🤝 Contributing
+1. `design-resources` - Pelajari prinsip desain
+2. `portfolio-tejas1996p` - Mulai dengan vanilla JS
+3. `react-roadmap` - Learning path React
+4. `fullstack-roadmap` - Panduan lengkap full-stack
 
-Contributions welcome! See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
+### Untuk Intermediate
+
+1. `gsap-animations-website` - Animasi profesional
+2. `dms-tech-lab` - Next.js + TypeScript
+3. `developer-folio` / `developer-portfolio-said` - Portfolio modern
+4. `browser-use` - AI automation
+
+### Untuk Advanced
+
+1. `shopnest-ecommerce` - Full-stack marketplace
+2. `build-your-own-x` - Deep technical understanding
+3. `security-guide` - Secure development
+4. `superpowers` - AI-assisted workflow
+
+### Untuk Generative Art (UNREPLICABLE!)
+
+1. `quantum-aesthetic-entanglement` - 🆕 UI quantum-inspired
+2. `temporal-morphing-interface` - 🆕 UI berevolusi waktu
+3. `neuro-adaptive-aesthetic` - 🆕 Biofeedback adaptation
+4. `blockchain-provenance-art` - 🆕 Protection karya digital
+5. `chaos-fractal-resonance` - 🆕 Mathematical art
+
+### Untuk Career Development
+
+1. `fe-interview-questions` - Persiapan interview
+2. `fullstack-roadmap` - Skill mapping
+3. `developer-handbook` - Career guidance
+4. `security-guide` - Security expertise
+
+## 📝 Catatan
+
+- ⚠️ **developer-handbook** - Ada masalah checkout pada Windows (path issues)
+- ⚠️ **shopnest-ecommerce** - Mungkin incomplete karena disk space saat ekstraksi
+- Setiap skill memiliki file `SKILL.md` dengan panduan lengkap (Bahasa Indonesia)
+- Skills dapat dikombinasikan untuk hasil optimal
+- Update skills secara berkala untuk fitur terbaru
+
+## 🆕 Skills Terbaru (Maret 2026)
+
+5 Skills BARU yang belum pernah ada di repo manapun:
+
+| Skill | Keunikan | Status |
+|-------|----------|--------|
+| **quantum-aesthetic-entanglement** | 🧬 UI dengan quantum state, observer effect | ✅ Live |
+| **temporal-morphing-interface** | 🕰️ UI yang berevolusi seiring waktu | ✅ Live |
+| **neuro-adaptive-aesthetic** | 🧠 Biofeedback-driven adaptation | ✅ Live |
+| **blockchain-provenance-art** | 🌐 Immutable proof + smart contract | ✅ Live |
+| **chaos-fractal-resonance** | 🔮 Mathematical impossibility to replicate | ✅ Live |
+
+**Total: 50 skills** - Koleksi terlengkap untuk AI-assisted development!
+
+## 🤝 Kontribusi
+
+Kontribusi selalu diterima! Cara kontribusi:
+
+1. Fork repository ini
+2. Buat skill baru atau update existing
+3. Submit pull request
+4. Review dan merge
+
+### Panduan Kontribusi
+
+- Gunakan Bahasa Indonesia atau mixed Indo-English
+- Sertakan dokumentasi lengkap di SKILL.md
+- Tambahkan code examples yang runnable
+- Update README jika menambah skill baru
 
 ## 📞 Support
 
 - **Issues**: GitHub Issues
 - **Discord**: [Link]
 - **Documentation**: [docs/](./docs/)
+- **Email**: [your-email@example.com]
+
+## 📄 License
+
+This collection aggregates open-source projects. Each skill maintains its original license. Check individual skill folders for specific licenses.
+
+## 🙏 Acknowledgments
+
+Terima kasih kepada semua kontributor open-source yang telah membuat skills ini mungkin!
 
 ---
 
 **Made with ❤️ for the AI community**
 
-*Last Updated: March 2026*
+**Dibuat dengan ❤️ untuk komunitas AI Indonesia & global**
+
+*Last Updated: Maret 2026*
+*Terakhir Diperbarui: Maret 2026*
